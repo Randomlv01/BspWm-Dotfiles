@@ -1,0 +1,35 @@
+# Terminal
+super + Return
+    kitty
+
+super + b
+    firefox
+
+super + e
+    thunar
+
+# Fenster schließen
+super + q
+    bspc node -c
+
+super + .
+    flatpak run com.tomjwatson.Emote
+
+
+# Rofi starten
+super + space
+    rofi -show drun
+
+# Wechsel Workspace
+super + {1-5}
+    bspc desktop -f {1-5}
+
+# Wechsel Layout
+super + t
+    bspc node -t tiled
+super + f
+    bspc node -t floating
+
+# Neustart bspwm
+super + shift + r
+    bspc wm -r
